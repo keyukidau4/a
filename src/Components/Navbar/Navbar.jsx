@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Toggle } from "../Toggle/Toggle";
 import "./Navbar.css";
+import { themeContext } from "../../contact";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  const style = darkMode
+    ? {
+        color: "white",
+      }
+    : null;
   return (
     <div className="n-wrapper">
       <div className="n-left">
@@ -14,13 +23,19 @@ export const Navbar = () => {
           <ul>
             <li>Home</li>
             <li>
-              <a href="#services">Services</a>
+              <Link smooth spy to="services">
+                Services
+              </Link>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <Link smooth spy to="experience">
+                Experience
+              </Link>
             </li>
             <li>
-              <a href="#portfolio">Projects</a>
+              <Link smooth spy to="portfolio">
+                Projects
+              </Link>
             </li>
             <li>Testimonials</li>
           </ul>
