@@ -1,18 +1,18 @@
 import React from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import VNRestaurant from "../../img/vn-restaurant.png";
+import Contact from "../../img/contact.png";
+import Dentist from "../../img/dentist.png";
+import Pokemon from "../../img/pokemon.png";
 import "swiper/css";
 
 export const Portfolio = () => {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       {/* heading */}
       <span>recent project</span>
-      <span>Porftolio</span>
+      <span>Projects</span>
 
       {/* slider */}
       <Swiper
@@ -20,19 +20,43 @@ export const Portfolio = () => {
         // spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
-        className='portfolio-slider'
+        className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <a
+            href="https://vnrestaurant.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={VNRestaurant} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <a
+            href="https://contact-app-five-psi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Contact} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <a
+            href="https://keyukidau4.github.io/dentist-responsive/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Dentist} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <a
+            href="https://pokemon-tut-mu.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Pokemon} alt="" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>

@@ -11,22 +11,24 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_86hvrq8",
-        "template_8nw6xu8",
-        form.current,
-        "6CgBgkv3NLOXWGEVa"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    alert("Thanks You!, Contact me with gmail Please, This emailjs is deleted");
+
+    // emailjs
+    //   .sendForm(
+    //     "service_86hvrq8",
+    //     "template_8nw6xu8",
+    //     form.current,
+    //     "6CgBgkv3NLOXWGEVa"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setDone(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   // email js end
