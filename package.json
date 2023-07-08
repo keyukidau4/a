@@ -1,8 +1,7 @@
 {
-  "name": "starter",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/keyukidau4/portfolio-starter-master",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
@@ -21,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
